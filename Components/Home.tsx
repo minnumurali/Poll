@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   mainList: {
-    backgroundColor: "#d8e0d3",
+    backgroundColor: "#b9f0c8",
    },
   title: {
     fontSize: 25,
@@ -138,6 +138,7 @@ url:{
     color: "black",
     fontSize: 18,
     fontWeight: "500",
+    
    },
   button: {
     fontSize: 40,
@@ -155,13 +156,14 @@ url:{
   rawJson: {
     flex: 1,
     backgroundColor: "#d8e0d3",
-    padding:10
+    padding:10,
+    justifyContent:"space-around"
   },
   rawText: {
     fontSize: 20,
     fontStyle:"normal",
     fontWeight:"700",
     color:"#121211",
-    
+   
   },
 })

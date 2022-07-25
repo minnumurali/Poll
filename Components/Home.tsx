@@ -75,7 +75,7 @@ const Home = () => {
   
   
   (
-    <ScrollView>
+    <ScrollView style={styles.scroll}>
    
     <View style={styles.rawJson}>
 
@@ -166,6 +166,14 @@ url:{
     shadowRadius: 3,
     elevation:3
 
+  },
+  scroll:{
+    borderRadius:10,
+     padding:10,
+    borderColor:"#1e1e1e",
+    
+    
+    
   },
   rawJson: {
     flex: 1,

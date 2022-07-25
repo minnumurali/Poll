@@ -124,7 +124,7 @@ const styles = StyleSheet.create({
   
 url:{
   fontStyle:"italic",
-  color: "blue" ,
+//   color: "blue" ,
   fontWeight:"500",
   paddingTop:8
 },
@@ -141,7 +141,7 @@ url:{
    },
   button: {
     fontSize: 40,
-    textAlign: "right",
+    textAlign: "left",
     margin: 10,
     color:"red"
   },

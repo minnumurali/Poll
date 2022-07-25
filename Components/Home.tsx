@@ -13,8 +13,6 @@ const Home = () => {
   let page = useRef<number>(1);
 
  
-
-
   const getApi = async () => {
     try {
       const request = await axios.get(
@@ -58,8 +56,7 @@ const Home = () => {
         <Text style={styles.author}>Author : {item.author}</Text>
         <Text style={styles.create}>CreatedAt : {item.created_at}</Text>
         <Text style={styles.url}
-        onPress={() => Linking.openURL("item.url")}>
-        {item.url}
+        onPress={() => Linking.openURL("item.url")}>URL : {item.url}
         </Text>
       </TouchableOpacity>
     );
@@ -102,6 +99,7 @@ const styles = StyleSheet.create({
   },
   mainList: {
     backgroundColor: "#b9f0c8",
+
    },
   title: {
     fontSize: 25,
@@ -143,21 +141,33 @@ url:{
   button: {
     fontSize: 40,
     textAlign: "left",
-    margin: 10,
-    color:"red"
+    margin: 2,
+    color:"red",
+     backgroundColor:"#d8e0d3",
+    // borderRadius:100,
+    //  elevation: 10,
+    
+    // paddingVertical: 10,
+    // paddingHorizontal: 10
   },
   listPage: {
     borderWidth: 1,
     padding: 8,
     borderRadius: 1,
-    borderStartColor:"#a9a9a9",
+    borderStartColor:"#171717",
+    shadowColor: '#171717',
+    shadowOffset: {width: -2, height: 4},
+    shadowOpacity: 0.2,
+    shadowRadius: 3,
+    elevation:3
 
   },
   rawJson: {
     flex: 1,
     backgroundColor: "#d8e0d3",
     padding:10,
-    justifyContent:"space-around"
+    justifyContent:"space-around",
+    
   },
   rawText: {
     fontSize: 20,

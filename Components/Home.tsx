@@ -76,16 +76,19 @@ const Home = () => {
   
   (
     <ScrollView>
+   
     <View style={styles.rawJson}>
 
-      <TouchableOpacity> 
+    <TouchableOpacity> 
       <Text style={styles.button} 
       onPress={() => setCurrentData(undefined)}>
-       x
+        x 
       </Text>
       </TouchableOpacity>
+    
       <Text style={styles.rawText}>{JSON.stringify(currentData)}</Text>
     </View>
+   
     </ScrollView>
   );
 };
@@ -111,7 +114,8 @@ const styles = StyleSheet.create({
     fontSize: 22,
     fontWeight: "700",
     color: "#283618",
-    paddingTop:8
+    paddingTop:8,
+   
   },
  create:{
   fontStyle:"italic",
@@ -122,9 +126,10 @@ const styles = StyleSheet.create({
   
 url:{
   fontStyle:"italic",
-//   color: "blue" ,
+  color: "black" ,
   fontWeight:"500",
-  paddingTop:8
+  paddingTop:8,
+  textDecorationLine: 'underline',
 },
   page: {
     backgroundColor: "white",
